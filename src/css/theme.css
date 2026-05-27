@@ -1,0 +1,60 @@
+.dark {
+  --bg-primary: #070B14;
+  --bg-secondary: #0F172A;
+  --card-bg: #111827;
+  --card-hover: #8c95a5;
+
+  --primary: #6D5EF8;
+  --primary-hover: #5746F7;
+  --blue-neon: #3B82F6;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+
+  --border-color: #334155;
+
+  --warm-light: #F59E0B;
+  --pink-glow: #EC4899;
+
+    /* GRADIENTES */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #6D5EF8,
+    #3B82F6
+  );
+
+   --shadow-color: rgba(255, 255, 255, 0.6);
+}
+
+.light {
+  /* FUNDOS */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #EEF2FF;
+  --card-bg: #FFFFFF;
+  --card-hover: #E2E8F0;
+
+  /* CORES PRINCIPAIS */
+  --primary: #6D5EF8;
+  --primary-hover: #5746F7;
+  --blue-neon: #2563EB;
+
+  /* TEXTOS */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+
+  /* BORDAS */
+  --border-color: #CBD5E1;
+
+  /* DETALHES */
+  --warm-light: #F59E0B;
+  --pink-glow: #EC4899;
+
+  /* EXTRAS */
+  --shadow-color: rgba(109, 94, 248, 0.12);
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    #F8FAFC,
+    #EEF2FF
+  );
+}

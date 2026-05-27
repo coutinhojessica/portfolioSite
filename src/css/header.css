@@ -1,0 +1,132 @@
+@import url(./global.css);
+@import url(./theme.css);
+
+.cabecalho,
+.navBar,
+.navList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cabecalho {
+  justify-content: space-around;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.navBar {
+  padding: 3px;
+  flex-basis: 80%;
+  
+}
+
+.iconMobile {
+  display: none;
+}
+
+.navList {
+  padding: 5px;
+  justify-content: end;
+  width: 100%;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navList .navItem:nth-child(6) {
+  margin: 0 9%;
+}
+
+.navLink {
+  color: var(--text-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease;
+}
+
+.navLink:hover{
+  text-shadow: 1px 2px 50px var(--blue-neon);
+  color: var(--primary);
+}
+
+.btnTheme {
+  background: transparent;
+  border: none;
+}
+
+.iconTheme {
+  width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .navBar {
+    flex-basis: 0;
+  }
+
+  .navList {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 0;
+    text-align: center;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+  }
+
+  .navItem {
+    margin: 10% 0;
+  }
+
+  .navBar.activeMenu .navList {
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .iconMobile {
+    display: block;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    border: 1px solid var(--primary);
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  .navBar.activeMenu .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .navBar.activeMenu .line2 {
+    opacity: 0;
+  }
+
+  .navBar.activeMenu .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
