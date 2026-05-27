@@ -53,12 +53,25 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: .3s ease;
+  padding: 5px 10px;
 }
 
 .navLink:hover{
-  text-shadow: 1px 2px 50px var(--blue-neon);
-  color: var(--primary);
+  color: var(--primary-hover);
+  font-weight: 700;
 }
+
+.btnFaleConosco{
+  background-color: var(--blue-neon);
+   padding:10px 15px ;
+}
+
+.btnFaleConosco:hover{
+   background-color: var(--primary);
+   color: var(--text-secondary);
+    padding:10px 15px ;
+}
+
 
 .btnTheme {
   background: transparent;
