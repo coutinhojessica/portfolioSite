@@ -3,6 +3,101 @@
 @import url(header.css);
 @import url(hero.css);
 
-main{
-    background-color: var(--bg-primary);
+main {
+  background-color: var(--bg-secondary);
+  padding: 30px 0;
+  min-height: 50vh;
+  padding: 50px 0;
+}
+
+
+/* seção serviços */
+
+.container-servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-servicos {
+  color: var(--blue-neon);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.title-fazemos{
+    color: var(--text-primary);
+}
+
+.descricao-servicos{
+    color: var(--text-secondary);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 85%;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover{
+    background-color: var(--card-hover);
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: var(--bg-bg);
+  width: 85%;
+  padding: 30px;
+  box-shadow: 0 0 15px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card1 {
+  grid-column: 1 / 2;
+}
+
+.card2 {
+  grid-column: 2 / 3;
+}
+
+.card3 {
+  grid-column: 3 / -1;
+}
+
+.card-title {
+  color: var(--text-secondary);
+}
+
+.card-body {
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .card1 {
+    grid-column: 1 / -1;
+  }
+
+  .card2 {
+    grid-column: 1 / -1;
+  }
+
+  .card3 {
+    grid-column: 1 / -1;
+  }
 }

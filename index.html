@@ -8,18 +8,52 @@
       href="./assets/imagens/favicon_io/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" type="text/css" href="./src/css/main .css" />
     <title>Code Next Line</title>
   </head>
   <body>
     <div class="dark" id="header"></div>
     <div class="dark" id="hero"></div>
-    <main>
-      <h2>Página Inicial</h2>
-      <button>entrar</button>
+    <main class="dark" id="main">
+      <section class="container-servicos" id="servicos">
+        <p class="title-servicos">Serviços</p>
+        <h2 class="title-fazemos">O que fazemos</h2>
+        <p class="descricao-servicos">Tencologia sob medida para transformar ideias em soluções reais.</p>
+
+        <section class="cards">
+          <div class="card1">
+            <div>
+            <i class="fa-solid fa-code fa-flip" style="color: #6d5ef8;"></i>
+          </div>
+            <h3 class="card-title">Desenvolvimento Front-End</h3>
+            <p class="card-body">Interfaces modernas, rápidas e reponsivas para web.</p>
+          </div>
+          <div class="card2">
+            <div>
+              <i class="fa-solid fa-laptop-code fa-fade" style="color: #6d5ef8;"></i>
+
+            </div>
+            <h3 class="card-title">Landing Pages</h3>
+            <p class="card-body">Páginas profissionais focadas em presença digital e conversão.</p>
+          </div>
+          <div class="card3">
+            <div>
+               <i class="fa-solid fa-swatchbook fa-bounce" style="color: #6d5ef8;"></i>
+            </div>
+            <h3 class="card-title">UI Redesign</h3>
+            <p class="card-body">Transformando layouts antigos em experiências.</p>
+          </div>
+        </section>
+      </section>
     </main>
-    <div id="footer"></div>
+    <div class="dark" id="footer"></div>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

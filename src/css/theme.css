@@ -2,7 +2,7 @@
   --bg-primary: #070B14;
   --bg-secondary: #0F172A;
   --card-bg: #111827;
-  --card-hover: #8c95a5;
+  --card-hover: #8c95a541;
 
   --primary: #6D5EF8;
   --primary-hover: #5746F7;
@@ -23,7 +23,7 @@
     #3B82F6
   );
 
-   --shadow-color: rgba(255, 255, 255, 0.6);
+   --shadow-color: rgba(199, 191, 191, 0.13);
 }
 
 .light {
