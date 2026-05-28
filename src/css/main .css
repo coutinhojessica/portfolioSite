@@ -85,7 +85,10 @@ main {
   color: var(--text-secondary);
 }
 
+/* seção sobre mim */
+
 @media screen and (max-width: 768px) {
+  /* seção serviços */
   .cards {
     grid-template-rows: repeat(3, 1fr);
     width: 95%;
@@ -109,4 +112,6 @@ main {
   .card3 {
     grid-column: 1 / -1;
   }
+
+  /* seção sobre mim */
 }
