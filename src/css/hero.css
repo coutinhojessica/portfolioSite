@@ -9,7 +9,8 @@
   flex-wrap: wrap;
   padding: 10px;
   background-color: var(--bg-primary);
-  min-height: 90vh;
+  min-height: 70vh;
+  width: 100%;
 }
 
 .container-text {
