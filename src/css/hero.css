@@ -1,0 +1,129 @@
+@import url(./global.css);
+@import url(./theme.css);
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  min-height: 90vh;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 20%;
+  padding: 0 20px;
+}
+
+.frase {
+  color: var(--primary);
+  border-radius: 20px;
+  font-weight: 400;
+  background-color: rgba(136, 87, 182, 0.199);
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.slogan {
+  color: var(--text-primary);
+  font-size: 4.5rem;
+  text-align: justify;
+  margin: 30px 0;
+}
+
+.destaque-hero {
+  font-style: italic;
+  color: var(--primary);
+}
+
+.descricao {
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.container-btn a {
+  text-decoration: none;
+}
+
+.nossosServicos {
+  color: var(--text-primary);
+  background-color: var(--primary);
+  padding: 15px 30px;
+}
+
+.icon-projetos {
+  border: 2px solid var(--primary);
+  padding: 15px 30px;
+}
+
+.verProjetos {
+  color: var(--primary);
+}
+
+.container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  flex-basis: 60%;
+}
+
+.container-img img {
+  width: 670px;
+  transform: rotate(-5deg);
+}
+
+.container-img img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+
+  .container:nth-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-text {
+    flex-grow: 1;
+      flex-basis: 100%;
+  }
+
+  .container-text:nth-child{
+    flex-grow: 1;
+    flex-basis: 33.3%;
+  }
+
+  .frase{
+    font-size: .8rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .container-img {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .container-img img {
+    width: 300px;
+  }
+}

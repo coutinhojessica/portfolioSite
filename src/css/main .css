@@ -1,6 +1,7 @@
 @import url(global.css);
 @import url(theme.css);
 @import url(header.css);
+@import url(hero.css);
 
 main{
     background-color: var(--bg-primary);
