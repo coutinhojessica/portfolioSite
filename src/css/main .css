@@ -10,7 +10,6 @@ main {
   padding: 50px 0;
 }
 
-
 /* seção serviços */
 
 .container-servicos {
@@ -29,12 +28,14 @@ main {
   font-size: 1.5rem;
 }
 
-.title-fazemos{
-    color: var(--text-primary);
+.title-fazemos {
+  color: var(--text-primary);
 }
 
-.descricao-servicos{
-    color: var(--text-secondary);
+.descricao-servicos {
+  color: var(--text-secondary);
+  max-width: 95%;
+  text-align: center;
 }
 
 .cards {
@@ -48,8 +49,8 @@ main {
 
 .card1:hover,
 .card2:hover,
-.card3:hover{
-    background-color: var(--card-hover);
+.card3:hover {
+  background-color: var(--card-hover);
 }
 
 .card1,
@@ -87,6 +88,14 @@ main {
 @media screen and (max-width: 768px) {
   .cards {
     grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    justify-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    margin: 30px 0;
   }
 
   .card1 {
