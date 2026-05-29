@@ -301,7 +301,7 @@ main {
   border-radius: 12px;
   cursor: pointer;
 
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -352,5 +352,9 @@ main {
 
   .contato form{
     width: 90%;
+  }
+
+  .contato button{
+    width: 80%;
   }
 }
