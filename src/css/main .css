@@ -58,7 +58,7 @@ main {
   background-color: var(--bg-bg);
   width: 85%;
   padding: 30px;
-  box-shadow: 0 0 15px var(--shadow-color);
+  box-shadow: 0 0 15px var(--pink-glow);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -110,7 +110,7 @@ main {
   padding: 0 25px;
 }
 
-.sobre-title{
+.sobre-title {
   flex-grow: 1;
   flex-basis: 45%;
 }
@@ -135,7 +135,7 @@ main {
   text-indent: 2rem;
 }
 
-.soft-skills{
+.soft-skills {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -151,8 +151,84 @@ main {
   padding: 8px 9px;
 }
 
-.btn-soft-skill > p{
+.btn-soft-skill > p {
   color: var(--text-primary);
+}
+
+/* seção projetos */
+
+.container-projetos {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.container-projetos .projeto-title {
+  color: var(--primary-hover);
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 60px;
+}
+
+.container-projetos h2 {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+.projeto-descricao {
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.carousel {
+  display: flex;
+  max-width: 75rem;
+  overflow: hidden;
+  box-shadow: 0 0 50px var(--blue-neon);
+}
+
+.slides {
+  justify-self: center;
+  align-items: center;
+}
+
+.slide-desktop {
+  display: block;
+  width: 1200px;
+  object-fit: contain;
+}
+
+.slide-mobile {
+  display: none;
+}
+
+ .esquerda, .direita {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 59px;
+  height: 55px;
+  background-color: var(--blue-neon);
+}
+
+.esquerda {
+  left: 10%;
+  color: var(--bg-primary);
+}
+
+.direita {
+  right: 10%;
+  color: var(--bg-primary);
 }
 
 @media screen and (max-width: 768px) {
@@ -185,5 +261,27 @@ main {
 
   .container-sobre {
     flex-direction: column;
+  }
+
+  /* seção projetos */
+
+  .slide-desktop {
+    display: none;
+
+  }
+
+  .slide-mobile{
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+   .slide-desktop {
+    display: none;
+  }
+
+  .slide-mobile{
+    display: block;
   }
 }

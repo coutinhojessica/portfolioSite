@@ -16,3 +16,31 @@ async function carregarComponentes(id, arquivo) {
 carregarComponentes('header', './components/header.html');
 carregarComponentes('hero', './components/hero.html');
 carregarComponentes('footer', './components/footer.html');
+
+const slides = document.querySelector('.slidess');
+const slidesImagens = document.querySelectorAll(".slides");
+
+const btnEsquerda = document.querySelector(".esquerda");
+const btnDireita = document.querySelector('.direita');
+
+let index = 0;
+
+btnEsquerda.addEventListener('click', () =>{
+    index--;
+    console.log(index);
+    if(index < 0) index = slidesImagens.length -1
+    atualizarCarrossel();
+})
+
+btnDireita.addEventListener('click', () =>{
+    index++;
+     console.log(index);
+     if(index > slidesImagens.length -1) index = 0;
+    atualizarCarrossel();
+})
+
+const atualizarCarrossel = () => {
+    slidesImagens.forEach(slide => {
+        slide.style.transform = `translateX(-${index * 100}%)`;
+    });
+}
