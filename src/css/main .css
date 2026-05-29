@@ -265,17 +265,26 @@ main {
 
   /* seção projetos */
 
+  .carousel{
+    width: 390px;
+      overflow: hidden;
+  }
+
   .slide-desktop {
     display: none;
 
   }
 
   .slide-mobile{
-    width: 1200px;
+    width: 390px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .carousel{
+    width: 1015px;
+      overflow: hidden;
+  }
 
    .slide-desktop {
     display: none;
