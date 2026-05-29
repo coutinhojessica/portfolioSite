@@ -1,60 +1,52 @@
 .dark {
-  --bg-primary: #070B14;
-  --bg-secondary: #0F172A;
+  --bg-primary: #070b14;
+  --bg-secondary: #0f172a;
   --card-bg: #111827;
   --card-hover: #8c95a541;
 
-  --primary: #6D5EF8;
-  --primary-hover: #5746F7;
-  --blue-neon: #3B82F6;
+  --primary: #6d5ef8;
+  --primary-hover: #5746f7;
+  --blue-neon: #3b82f6;
 
-  --text-primary: #F8FAFC;
-  --text-secondary: #CBD5E1;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
 
   --border-color: #334155;
 
-  --warm-light: #F59E0B;
-  --pink-glow: #EC4899;
+  --warm-light: #f59e0b;
+  --pink-glow: #ec489a4f;
 
-    /* GRADIENTES */
-  --gradient-primary: linear-gradient(
-    135deg,
-    #6D5EF8,
-    #3B82F6
-  );
+  /* GRADIENTES */
+  --gradient-primary: linear-gradient(135deg, #6d5ef8, #3b82f6);
 
-   --shadow-color: rgba(199, 191, 191, 0.13);
+  --shadow-color: rgba(199, 191, 191, 0.13);
 }
 
 .light {
   /* FUNDOS */
-  --bg-primary: #F8FAFC;
-  --bg-secondary: #EEF2FF;
-  --card-bg: #FFFFFF;
-  --card-hover: #E2E8F0;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef2ff;
+  --card-bg: #ffffff;
+  --card-hover: #e2e8f0;
 
   /* CORES PRINCIPAIS */
-  --primary: #6D5EF8;
-  --primary-hover: #5746F7;
-  --blue-neon: #2563EB;
+  --primary: #6d5ef8;
+  --primary-hover: #5746f7;
+  --blue-neon: #2563eb;
 
   /* TEXTOS */
-  --text-primary: #0F172A;
+  --text-primary: #0f172a;
   --text-secondary: #475569;
 
   /* BORDAS */
-  --border-color: #CBD5E1;
+  --border-color: #cbd5e1;
 
   /* DETALHES */
-  --warm-light: #F59E0B;
-  --pink-glow: #EC4899;
+  --warm-light: #f59e0b;
+  --pink-glow: #ec489a4f;
 
   /* EXTRAS */
   --shadow-color: rgba(109, 94, 248, 0.336);
 
-  --gradient-primary: linear-gradient(
-    135deg,
-    #F8FAFC,
-    #EEF2FF
-  );
+  --gradient-primary: linear-gradient(135deg, #f8fafc, #eef2ff);
 }

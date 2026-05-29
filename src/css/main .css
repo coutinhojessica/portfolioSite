@@ -4,10 +4,7 @@
 @import url(hero.css);
 
 main {
-  background-color: var(--bg-secondary);
-  padding: 30px 0;
   min-height: 50vh;
-  padding: 50px 0;
 }
 
 /* seção serviços */
@@ -18,10 +15,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  background-color: var(--bg-secondary);
+  padding: 50px 0;
 }
 
 .title-servicos {
-  color: var(--blue-neon);
+  color: var(--primary-hover);
   text-align: center;
   margin-top: 20px;
   font-weight: 600;
@@ -87,6 +86,75 @@ main {
 
 /* seção sobre mim */
 
+.container-sobre {
+  background-color: var(--bg-primary);
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  gap: 30px;
+}
+
+.container-img-sobre {
+  flex-grow: 3;
+  flex-basis: 55%;
+}
+
+.container-img-sobre img {
+  width: 100%;
+}
+
+.container-text-btn-sobre {
+  flex-grow: 1;
+  flex-basis: 45%;
+  padding: 0 25px;
+}
+
+.sobre-title{
+  flex-grow: 1;
+  flex-basis: 45%;
+}
+
+.sobre-title p {
+  color: var(--primary-hover);
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.sobre-title h2 {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.text-sobre {
+  color: var(--text-secondary);
+  margin: 25px 0;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+.soft-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-soft-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: var(--pink-glow);
+  padding: 8px 9px;
+}
+
+.btn-soft-skill > p{
+  color: var(--text-primary);
+}
+
 @media screen and (max-width: 768px) {
   /* seção serviços */
   .cards {
@@ -114,4 +182,8 @@ main {
   }
 
   /* seção sobre mim */
+
+  .container-sobre {
+    flex-direction: column;
+  }
 }
