@@ -227,25 +227,24 @@
       <section id="faleContato" class="contato">
         <p class="contato-title">Contato</p>
         <h2>Vamos conversar</h2>
-        <p class="contato-descricao">Vamos transformar sua ideia em uma experiência digital moderna.</p>
-        <form action="https://formsubmit.io/jessicamaiara.coutinho@gmail.com" method="POST">
-          <input type="text" name="nome" placeholder="Seu nome" required />
-
+        <p class="contato-descricao">
+          Vamos transformar sua ideia em uma experiência digital moderna.
+        </p>
+        <form id="contact-form">
           <input type="email" name="email" placeholder="Seu email" required />
 
           <textarea
-            name="mensagem"
+            name="message"
             placeholder="Sua mensagem..."
             required
           ></textarea>
 
-          <button type="submit">
-            Enviar mensagem
-          </button>
+          <button type="submit">Enviar mensagem</button>
         </form>
       </section>
     </main>
     <div class="dark" id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

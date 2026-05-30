@@ -17,6 +17,8 @@ carregarComponentes('header', './components/header.html');
 carregarComponentes('hero', './components/hero.html');
 carregarComponentes('footer', './components/footer.html');
 
+
+
 const slides = document.querySelector('.slidess');
 const slidesImagens = document.querySelectorAll(".slides");
 
@@ -44,3 +46,33 @@ const atualizarCarrossel = () => {
         slide.style.transform = `translateX(-${index * 100}%)`;
     });
 }
+
+emailjs.init("EiN9AxEeS7GDOYPWl");
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (event) {
+
+  event.preventDefault();
+
+  emailjs.sendForm(
+    "service_9k7icqo",
+    "template_52xjmgr",
+    this
+  )
+  .then(() => {
+
+    alert("Mensagem enviada!");
+
+    form.reset();
+
+  })
+  .catch((error) => {
+
+    alert("Erro ao enviar");
+
+    console.log(error);
+
+  });
+
+});
