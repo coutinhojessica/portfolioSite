@@ -1,0 +1,137 @@
+@import url(global.css);
+@import url(theme.css);
+
+.container {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.conteudo {
+  display: flex;
+  gap: 20px;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.container a:hover {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  gap: 20px;
+  flex-basis: 25%;
+}
+
+.logo-text img {
+  width: 80%;
+}
+
+.logo-text p {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 0 10px;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.linksRapidos {
+  color: var(--text-primary);
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+.linksRapidos p {
+  margin-bottom: 30px;
+}
+
+.linksRapidos li {
+  margin: 10px 0;
+}
+
+.servicos-footer {
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+.servicos-footer p {
+  margin-bottom: 30px;
+}
+
+.servicos-footer p,
+ul li {
+  color: var(--text-primary);
+}
+
+.servicos-footer li {
+  margin: 10px 0;
+}
+
+.contato-footer {
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+.contato-footer p {
+  color: var(--text-primary);
+  font-size: 1.4rem;
+}
+
+.icon-email {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.direitosAutorais {
+  display: inline-flex;
+}
+
+.direitosAutorais p {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-text img{
+        width: 50%;
+    }
+
+    .servicos-footer{
+        text-align: center;
+    }
+
+    .contato-footer{
+        text-align: center;
+    }
+}

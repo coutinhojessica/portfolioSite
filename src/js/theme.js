@@ -3,6 +3,7 @@ export function iniciarTheme() {
   let headerTheme = document.getElementById("header");
   const heroTheme = document.getElementById("hero");
   const mainTheme = document.getElementById("main");
+  const footerTheme = document.getElementById("footer");
   btnTheme.addEventListener("click", () => {
     // page header
     headerTheme.classList.toggle("dark");
@@ -12,8 +13,12 @@ export function iniciarTheme() {
     heroTheme.classList.toggle("dark");
     heroTheme.classList.toggle("light");
 
-        // page main
+    // page main
     mainTheme.classList.toggle("dark");
     mainTheme.classList.toggle("light");
+
+        // page footer
+    footerTheme.classList.toggle("dark");
+    footerTheme.classList.toggle("light");
   });
 }
