@@ -108,7 +108,7 @@ ul li {
 }
 
 .direitosAutorais {
-  display: inline-flex;
+  display: flex;
 }
 
 .direitosAutorais p {
@@ -127,6 +127,10 @@ ul li {
         width: 50%;
     }
 
+    .linksRapidos li{
+        text-align: center;
+    }
+
     .servicos-footer{
         text-align: center;
     }
@@ -134,4 +138,9 @@ ul li {
     .contato-footer{
         text-align: center;
     }
+
+    .direitosAutorais{
+    padding: 0 8px;
+    }
+
 }
